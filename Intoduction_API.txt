@@ -1,0 +1,10 @@
+API----> 
+Customer --> Developer
+Waiter -->  API
+Shaef --> Backend
+
+
+1.GET --> amra jodi kono kisu pete chai, Backend server theke api call er maddhome koto data pete chai , ba ui te show korte chai.
+
+
+2.POST --> kono facture ba data api er maddhome server a save korte chacchi,,othoba database er moddhe kono data ba api er moddhe kono information ke search korar jonno post use kori

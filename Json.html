@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+
+    <h1>JSON</h1>
+
+    <h3>JavaScript Object Notation</h3>
+
+   <script>
+
+    const student = {id:160, name:"Murad",mark:[80,85,90],
+    favoriteMovies:{
+        good:"Super 30",
+        better:"12th Fail",
+        best:"3 Idiots"
+    }}
+
+
+    //Frontend theke kono data backend a pathabo tokhon oi data ke stringify kore pathate hoi (stringify--> in String)
+
+
+
+     
+    //ar server theke data receive korbo parse kore..parse korle oyta json akare chole asbe
+
+
+    const studentJSON = JSON.stringify(student);
+
+    console.log(studentJSON);
+
+
+    //{"id":160,"name":"Murad"}
+
+
+
+    //amra api theke data String hisebe pai
+
+
+
+    //String thakle kono kaj kora jai na -->  tai String ke Object a convert korte hobe
+
+
+
+    //String to Object
+    const studentObject = JSON.parse(studentJSON);
+    console.log(studentObject);
+
+
+
+
+   </script> 
+    
+</body>
+</html>
