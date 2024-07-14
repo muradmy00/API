@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+
+    <h1>JSON</h1>
+    
+    <h3>JavaScript Object Notation</h3>
+
+    <ul id="users_con">
+
+    </ul>
+
+     <ul id="users_id">
+
+    </ul>
+
+   <script>
+
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())
+      .then(json => display(json))
+   
+      function display(users){
+        const userName = users.map(users => users.phone) //just (.) Change korbo
+        const ul = document.getElementById("users_con");
+
+
+        for(let i=0;i<userName.length;i++){
+            const  username = userName[i];
+            const li = document.createElement("li");
+            li.innerText = username;
+            ul.appendChild(li);
+        }
+      }
+
+
+
+
+
+      // Status Code: 200 OK
+      // Status Code: 404 Not Found
+
+
+   </script> 
+    
+</body>
+</html>
